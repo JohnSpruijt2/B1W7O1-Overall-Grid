@@ -3,7 +3,7 @@
     margin: 0px;
 }
 body {
-    background-color: rgb(183, 183, 183)ff;
+    background-color: rgb(229, 229, 229);
 }
 header {
     background-color: rgb(214, 214, 255);
@@ -22,7 +22,11 @@ main {
 }
 footer {
     background-image: url("../img/footer_bg.png");
-    height: 55px;
+    height: 35px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
 }
 .navButton {
     text-decoration: none;
@@ -36,10 +40,42 @@ footer {
     line-height: 20px;
     font-family: 'Lato', sans-serif;
 }
+.secondText {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.click {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+.slider {
+    float: left;
+    margin-left: 50px;
+    width: 300px;
+}
 #banner {
     width: 65%;
     float: left;
     margin-right: 1%;
+}
+#auto {
+    float: left;
+    max-width: 450px;
+    margin-right: 1%;
+    border: 6px solid white;
+    border-radius: 30px;
+}
+#kleding {
+    float: left;
+    max-width: 450px;
+    margin-right: 1%;
+    border: 6px solid white;
+    border-radius: 30px;
 }
 #logo {
     margin: 1%;
@@ -57,8 +93,12 @@ footer {
     line-height: 30px;
     font-family: 'Lato', sans-serif;
 }
+#secondTitle {
+    font-size: 20px;
+    line-height: 22px;
+    font-family: 'Lato', sans-serif;
+}
 #secondMain {
     background-color: white;
-    border: 1px solid black;
-    height: 200px;
+    height: 320px;
 }
