@@ -6,6 +6,7 @@ body {
     background-color: rgb(229, 229, 229);
 }
 header {
+    grid-area:header;
     background-color: rgb(214, 214, 255);
     background-image: url("../img/header_bg.png")
 }
@@ -14,17 +15,20 @@ nav {
     margin-top: 40px;
     width: 550px;
 }
+
 main {
+    padding: 25px;
+    height: 350px;
+    grid-area:main;
     background-color: rgb(101, 142, 209);
     background-image: url("../img/banner_bg.png");
-    padding: 4%;
-    height: 335px;
 }
 footer {
+    grid-area:footer;
     background-image: url("../img/footer_bg.png");
     height: 35px;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: white;
     text-align: center;
     padding-top: 15px;
 }
@@ -53,14 +57,31 @@ footer {
     color: black;
     font-family: 'Lato', sans-serif;
 }
-.slider {
+#slider1 {
     float: left;
-    margin-left: 50px;
-    width: 300px;
+    grid-area: slider1;
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 290px;
+}
+#slider2 {
+    float: left;
+    grid-area: slider2;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 290px;
+}
+#slider3 {
+    float: left;
+    grid-area: slider3;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 290px;
 }
 #banner {
+    margin: 1%;
+    float:  left;
     width: 65%;
-    float: left;
     margin-right: 1%;
 }
 #auto {
@@ -71,6 +92,7 @@ footer {
     border-radius: 30px;
 }
 #kleding {
+    width: 350px;
     float: left;
     max-width: 450px;
     margin-right: 1%;
@@ -78,14 +100,21 @@ footer {
     border-radius: 30px;
 }
 #logo {
+    float: left;
     margin: 1%;
     margin-left: 2%;
     height: 70px;
 }
 #page {
     width: 1100px;
+    display: grid;
+    grid-template-areas:"header header header header header header"
+            "main main main main main main"
+            "main main main main main main"
+            "slider1 slider1 slider2 slider2 slider3 slider3"
+            "slider1 slider1 slider2 slider2 slider3 slider3"
+            "footer footer footer footer footer footer";
     margin: 0px auto;
-    height: 100%;
 }
 #mainTitle {
     color: white;
@@ -93,12 +122,15 @@ footer {
     line-height: 30px;
     font-family: 'Lato', sans-serif;
 }
-#secondTitle {
+.secondTitle {
     font-size: 20px;
     line-height: 22px;
     font-family: 'Lato', sans-serif;
 }
 #secondMain {
+    width: 1100px;
     background-color: white;
-    height: 320px;
+}
+#sliderImg {
+    width: 250px;
 }
